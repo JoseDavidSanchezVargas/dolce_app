@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dolce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/dolce-app.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+<body>
+
+    <!-- BAR TOP -->
+    <div class="fixed-top top-bar-01">
+        <div class="cont d-flex justify-content-center align-items-center">
+            <div class="col text-left pl-1">
+                <button><img src="assets/images/icons/svg/goback-arrow.svg" width="20" height="20"></button>
+            </div>
+            <div class="title-bar-01">Mi Pedido</div>
+            <div class="col text-right pr-1">
+                <button><img src="assets/images/icons/svg/menu-icon.svg" width="20" height="20"></button>
+                <button><img src="assets/images/icons/svg/user-icon.svg" width="20" height="20"></button>
+            </div>
+        </div>
+    </div>
+    <!-- END BAR TOP -->
+
+    <!-- CONTENT -->
+    <div class="bg-gray-03 mnh-100 body d-flex w-100">
+        <div class="p-1 mh-100 col p-2">
+            <div class="bg-white-01 radius-8 h-100 p-3">
+
+                <!-- ESTADO PEDIDO -->
+                <div class="mb-2 timeline-status-01">
+					
+                    <!-- ESTADO -->
+                    <div class="row m-0 mt-4 mb-4 justify-content-center align-items-center status-01 check">
+                        <div class="col text-right">Digitado</div>
+                        <div class="col-auto status"></div>
+                        <div class="col date">2018-09-15</div>
+                    </div>
+                    <!-- END ESTADO -->
+
+                    <!-- ESTADO -->
+                    <div class="row m-0 mt-4 mb-4 justify-content-center align-items-center status-01 check">
+                        <div class="col text-right">Pase de pedidos</div>
+                        <div class="col-auto status"></div>
+                        <div class="col date">2018-09-15</div>
+                    </div>
+                    <!-- END ESTADO -->
+
+                    <!-- ESTADO -->
+                    <div class="row m-0 mt-4 mb-4 justify-content-center align-items-center status-01">
+                        <div class="col text-right">Facturación</div>
+                        <div class="col-auto status"></div>
+                        <div class="col date">Pendiente</div>
+                    </div>
+                    <!-- END ESTADO -->
+
+                    <!-- ESTADO -->
+                    <div class="row m-0 mt-4 mb-4 justify-content-center align-items-center status-01">
+                        <div class="col text-right">Transporte</div>
+                        <div class="col-auto status"></div>
+                        <div class="col date">Pendiente</div>
+                    </div>
+                    <!-- END ESTADO -->
+
+                </div>
+                <!-- END ESTADO PEDIDO -->
+
+                <hr class="m-auto w-25">
+
+                <textarea rows="7" class="p-2 text-box-01 mt-4 mb-3" placeholder="Comentarios"></textarea>
+                <button class="btn-second m-auto">Enviar</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- BAR BOTTOM -->
+    <div class="fixed-bottom bar-bottom-01">
+        <div class="cont d-flex justify-content-center align-items-center">
+            <button class="w-100"><img src="assets/images/icons/svg/search-icon.svg" width="24" height="24"></button>
+        </div>
+    </div>
+    <!-- END BAR BOTTOM -->
+
+    <!-- Añadade padding al .body, si exite la barra superior y7o la inferior -->
+	<script>
+        if ($('.bar-bottom-01').length) {
+            $(".body").css({
+                "padding-top": $(".top-bar-01").height(),
+                "padding-bottom": $(".bar-bottom-01").height()
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dolce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/dolce-app.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<body>
+	
+	<!-- MENU -->
+	<div class="menu-overlay-01 bg-white-01 d-none">
+		<!-- PROFILE -->
+		<div class="bg-black-01 p-3 pb-4 text-center">
+			<div class="avatar-01 mb-2"><img src="assets/images/avatar.jpg" width="291" height="194"></div>
+			<h3 class="text-uppercase f-size-15 mb-3"><b>Pepita perez Perez</b></h3>
+			<button class="btn-second m-auto w-50">Mi cuenta</button>
+		</div>
+		<!-- END PROFILE -->
+		<!-- BUTTONS -->
+		<div>
+			<div class="p-2">
+			<button class="btn-white-01 text-left">Catálogo Dolce</button>
+			<button class="btn-white-01 text-left">Catálogo Puntos</button>
+			<button class="btn-white-01 text-left">Mi Pedido</button>
+			<button class="btn-white-01 text-left">Mi saldo pendiete</button>
+			<button class="btn-white-01 text-left">Puntos Acomulados</button>
+			<button class="btn-white-01 text-left">Cerrar sesion</button>
+				</div>
+		</div>
+		<!-- BUTTONS -->
+	</div>	
+	<!-- END MENU -->
+	
+
+    <!-- BAR TOP -->
+    <div class="fixed-top top-bar-01">
+        <div class="cont d-flex justify-content-center align-items-center">
+            <div class="col text-left pl-1">
+                <button><img src="assets/images/icons/svg/goback-arrow.svg" width="20" height="20"></button>
+            </div>
+            <div class="title-bar-01">
+                <span>Catálogo dolce</span>Campaña 142018</div>
+            <div class="col text-right pr-1">
+                <button><img src="assets/images/icons/svg/menu-icon.svg" width="20" height="20"></button>
+                <button><img src="assets/images/icons/svg/user-icon.svg" width="20" height="20"></button>
+            </div>
+        </div>
+    </div>
+    <!-- END BAR TOP -->
+
+    <!-- CONTENT -->
+    <div class="bg-gray-03 mnh-100 body d-flex w-100">
+        <div class="p-1 mh-100 col p-2">
+            <div class="bg-white-01 radius-8 h-100 pt-3 pb-3 text-center">
+
+                <h1 class="f-size-22 mb-0"><b>Nombre del producto</b></h1>
+                <p><b>Ref:</b> 5310009</p>
+
+                <!-- SLIDER -->
+                <div>
+                    <img src="assets/images/producto/producto-photo-01.jpg" width="625" height="401" class="img-fluid">
+                </div>
+                <!-- END SLIDER -->
+
+                <!-- PRECIO -->
+                <div class="bg-white-01 f-style-02 p-3 margin-top--30 d-inline-block radius-8">
+                    $39.999
+                </div>
+                <!-- PRECIO -->
+
+                <!-- TALLA E INFO -->
+                <div class="row m-0 mt-3 mb-3">
+                    <div class="col-auto pl-4 pr-4">
+                        <p class="text-uppercase mb-0">Talla</p>
+                        <select class="f-size-22 select-01">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+
+                    </div>
+                    <div class="col text-left">
+                        <p>Polialgodon Lycra y Algodon Lycra<br>
+                            Blanco/Negro<br>
+                            Semi ajistada</p>
+                    </div>
+                </div>
+                <!-- END TALLA E INFO -->
+
+                <!-- RATE -->
+                <div class="d-flex justify-content-center mb-1">
+                    <button><img src="assets/images/icons/svg/heart-active-icon.svg" width="20" height="20"></button>
+                    <button><img src="assets/images/icons/svg/heart-active-icon.svg" width="20" height="20"></button>
+                    <button><img src="assets/images/icons/svg/heart-active-icon.svg" width="20" height="20"></button>
+                    <button><img src="assets/images/icons/svg/heart-icon.svg" width="20" height="20"></button>
+                    <button><img src="assets/images/icons/svg/heart-icon.svg" width="20" height="20"></button>
+                </div>
+                <p>15 me gusta</p>
+                <!-- END RATE -->
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- BAR BOTTOM -->
+    <div class="fixed-bottom bar-bottom-01">
+        <div class="d-flex">
+            <div class="cont w-100">
+                <button class="w-100"><img src="assets/images/icons/svg/search-icon.svg" width="24" height="24"></button>
+            </div>
+            <button class=" cont w-100 btn-red"><img class="icon" src="assets/images/icons/svg/car-icon.svg" width="24" height="24">Comprar</button>
+        </div>
+    </div>
+    <!-- END BAR BOTTOM -->
+
+    <!-- Añadade padding al .body, si exite la barra superior y7o la inferior -->
+    <script>
+        if ($('.bar-bottom-01').length) {
+            $(".body").css({
+                "padding-top": $(".top-bar-01").height(),
+                "padding-bottom": $(".bar-bottom-01").height()
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+/* Sass Document */
+sass dolce-app.scss dolce-app.css
+	
+*
+  position: relative
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-tap-highlight-color: transparent
+  outline: 0 !important
+  border: none
+
+*::before, *::after 
+  box-sizing: border-box
+
+@font-face 
+  font-family: 'varsity'
+  src: url('../fonts-mgo/varsity_regular-webfont.eot')
+  src: url('../fonts-mgo/varsity_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts-mgo/varsity_regular-webfont.woff') format('woff'), url('../fonts-mgo/varsity_regular-webfont.ttf') format('truetype'), url('../fonts-mgo/varsity_regular-webfont.svg#varsity_regularvarsityRg') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: 'fontastiquefontastique'
+  src: url('../fonts-mgo/fontastique/fontastique-webfont.eot')
+  src: url('../fonts-mgo/fontastique/fontastique-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts-mgo/fontastique/fontastique-webfont.woff2') format('woff2'), url('../fonts-mgo/fontastique/fontastique-webfont.woff') format('woff'), url('../fonts-mgo/fontastique/fontastique-webfont.ttf') format('truetype'), url('../fonts-mgo/fontastique/fontastique-webfont.svg#fontastiquefontastique') format('svg')
+  font-weight: normal
+  font-style: normal
+
+$font-p: 'Montserrat', sans-serif
+
+$blue-facebook: #3b5998
+$gray-01: #787878
+$gray-02: #383838
+$gray-03: #e6e6e6
+$gray-04: #cccccc
+$red-01: #cd0000
+$green-01: #2f8600
+
+
+@mixin radius($radius) 
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+@mixin translateX($x) 
+  -webkit-transform: translateX($x)
+  -moz-transform: translateX($x)
+  -ms-transform: translateX($x)
+  transform: translateX($x)
+
+@mixin translateY($y) 
+  -webkit-transform: translateY($y)
+  -moz-transform: translateY($y)
+  -ms-transform: translateY($y)
+  transform: translateY($y)
+
+@mixin translateXY($x, $y) 
+  -webkit-transform: translate($x, $y)
+  -moz-transform: translate($x, $y)
+  -ms-transform: translate($x, $y)
+  transform: translate($x, $y)
+
+@mixin scale($scale) 
+  -webkit-transform: scale($scale)
+  -moz-transform: scale($scale)
+  -ms-transform: scale($scale)
+  transform: scale($scale)
+
+
+/* ---------------------------- CORE ------------------------------ */
+html, body
+  min-height: 100vh
+  height: auto
+
+body
+  font-family: $font-p
+  font-size: 12px
+  font-weight: 500
+
+button
+  background-color: transparent
+  cursor: pointer
+
+hr
+  border: 1px solid $gray-01
+
+/* ------ STYLES ----------*/
+
+/// HEIGHT
+.mnh-100
+  min-height: 100vh
+  height: auto
+
+/// PADDING 
+.padding-bottom-50
+  padding-bottom: 50px
+
+/// MARGIN
+.margin-top--230
+  margin-top: -230px
+
+.margin-top--30
+  margin-top: -30px
+
+/// MENU 
+.menu-overlay-01
+  width: 280px
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 2000
+  & .avatar-01
+    width: 100px
+    height: 100px
+    overflow: hidden
+    @include radius(100%)
+    border: 3px solid white
+    display: inline-block
+    & img
+      width: 100%
+      height: 100%
+      object-fit: cover		
+
+/// TOP BAR 
+.top-bar-01, .bar-bottom-01
+  color: $gray-01  
+  background-color: black
+  & .cont
+    padding: 12px 0	
+  & .title-bar-01
+    font-size: 13px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    & span
+      font-size: 9px
+      line-height: .5rem
+      display: block
+  &.bar-bottom-01
+    background-color: $gray-02    
+    & [class*=btn-]
+      @include radius(0px)
+
+/// BG IMG
+.bg-home-01
+  background: url(../images/bg-home-01.jpg) center center fixed
+  background-size: auto 100%
+
+/// BG COLOR 
+.bg-white-01
+  background: white
+
+.bg-white-80
+  background: rgba(white, .8)
+
+.bg-gray-03
+  background: #e6e6e6
+
+.bg-black-01
+  color: white
+  background: #000
+
+/// FORM
+[class*=input-]
+  font-weight: 700
+  &::placeholder
+    text-transform: uppercase	
+  &:-ms-input-placeholder
+    text-transform: uppercase	
+  &::-ms-input-placeholder
+    text-transform: uppercase	
+  &.input-01
+    width: 100%
+    color: white
+    background: rgba(black, .5)
+    padding: 11px	
+    @include radius(25px)
+    &::placeholder
+      color: white
+    &:-ms-input-placeholder
+      color: white	
+    &::-ms-input-placeholder
+      color: white	
+	
+.text-box-01
+  width: 100%
+  -webkit-box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, .15)
+  -moz-box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, .15)
+  box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, .15)
+
+.select-01
+  background-color: white
+  font-weight: 700
+
+/// BTN 
+[class*=btn-]
+  width: 100%
+  text-transform: uppercase
+  font-weight: 700
+  display: block
+  @include radius(5px)
+  &.btn-primary
+    background: black
+    padding: 11px  
+  &.btn-second
+    max-width: 85%
+    background: $gray-03
+    padding: 11px 
+  &.btn-white-01
+    font-weight: 500
+    background: white
+    padding: 11px 	
+  &.btn-red
+    color: white
+    max-width: 85%
+    background: $red-01
+    padding: 11px 	
+  &.btn-facebook-01
+    background: $blue-facebook
+    color: white
+    padding: 8px
+    text-transform: lowercase
+  & .icon
+    margin-right: 8px
+	
+/// FONT
+.f-style-01, .f-style-02
+  font-size: 55px
+  font-weight: 700
+  text-shadow: 0px 3px 1px rgba($gray-04, 1)
+  &.f-style-02
+    font-size: 45px
+    line-height: 2rem
+	
+.f-size-33	
+  font-size: 33px
+
+.f-size-22	
+  font-size: 22px
+
+.f-size-15	
+  font-size: 15px
+
+/// COLOR
+.clr-gray-02
+  color: $gray-02
+
+/// OVERFLOW 
+.overflow-auto
+  overflow: auto
+
+.scroll-y
+  overflow-y: auto
+  overflow-x: hidden
+
+/// DECO 
+.radius-8
+  @include radius(8px)
+	
+.timeline-status-01
+  &:after
+    content: ""
+    width: 4px
+    height: 100%
+    background: $gray-04
+    margin: auto
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 1
+    
+.status-01
+  z-index: 2
+  & .status
+    width: 28px
+    height: 28px
+    background: $gray-04
+    @include radius(100%)
+  & .date
+    color: $gray-03
+  &.check
+    & .status
+      background: $gray-02 url(../images/icons/svg/check.svg) no-repeat center
+      background-size: 18px 18px
+    & .date
+      color: $gray-02		
+    &:after
+      content: ""
+      width: 4px
+      height: 190%
+      background: $gray-02
+      margin: auto
+      position: absolute
+      top: 50%
+      left: 0
+      right: 0
+      @include translateY(-50%)
+      z-index: -1
+  &.check:first-child
+    &:after
+      top: 0
+      @include translateY(0%)
+  &.check:last-child
+    &:after
+      bottom: 0
+      top: auto
+      @include translateY(0%)	
+
+.invoice-01
+  & .value
+    color: $gray-01
+  &.ok
+    & .mensj
+      color: $green-01
+  &.no-ok
+    & .value, & .mensj
+      color: $red-01	
+  & hr
+    border-color: $gray-04
+	
+.gradient-b-gray-01
+  &:before
+    content: ""
+    width:  100%
+    height: 100px
+    background: -moz-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, rgba(230, 230, 230, 1) 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(230, 230, 230, 0)), color-stop(100%, rgba(230, 230, 230, 1)))
+    background: -webkit-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, rgba(230, 230, 230, 1) 100%)
+    background: -o-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, rgba(230, 230, 230, 1) 100%)
+    background: -ms-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, rgba(230, 230, 230, 1) 100%)
+    background: linear-gradient(180deg, rgba(230, 230, 230, 0) 0%, rgba(230, 230, 230, 1) 100%)
+    position: absolute
+    left: 0
+    bottom: 0
+    z-index: 2
+    pointer-events: none
+
+	

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dolce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/dolce-app.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+<body>
+
+    <!-- BAR TOP -->
+    <div class="fixed-top top-bar-01">
+        <div class="cont d-flex justify-content-center align-items-center">
+            <div class="col text-left pl-1">
+                <button><img src="assets/images/icons/svg/goback-arrow.svg" width="20" height="20"></button>
+            </div>
+            <div class="title-bar-01">Mis puntos</div>
+            <div class="col text-right pr-1">
+                <button><img src="assets/images/icons/svg/menu-icon.svg" width="20" height="20"></button>
+                <button><img src="assets/images/icons/svg/user-icon.svg" width="20" height="20"></button>
+            </div>
+        </div>
+    </div>
+    <!-- END BAR TOP -->
+
+    <!-- CONTENT -->
+    <div class="bg-gray-03 mnh-100 body d-flex align-content-stretch flex-wrap w-100 m-0">
+
+        <div class="p-0">
+            <img src="assets/images/img-puntos.jpg" width="662" height="464" class="img-fluid d-block">
+        </div>
+
+        <!-- PUNTOS -->
+        <div class="w-100 pb-2 margin-top--230">
+            <div class="h-100 pl-4 pr-4 text-center">
+                <div class="bg-white-01 radius-8 h-100 p-3">
+                    <h4 class="f-size-22"><b>Puntos Acomulados</b></h4>
+                    <hr class="w-25">
+                    <h3 class="f-style-01 clr-gray-02 mb-0">7.862</h3>
+                    <p>Vencen el 08-10-2019</p>
+                    <button class="btn-second m-auto">Redimir mis puntos</button>
+                </div>
+            </div>
+        </div>
+        <!-- END PUNTOS -->
+
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- BAR BOTTOM -->
+    <div class="fixed-bottom bar-bottom-01">
+        <div class="cont d-flex justify-content-center align-items-center">
+            <button class="w-100"><img src="assets/images/icons/svg/search-icon.svg" width="24" height="24"></button>
+        </div>
+    </div>
+    <!-- END BAR BOTTOM -->
+
+    <!-- Añadade padding al .body, si exite la barra superior y7o la inferior -->
+    <script>
+        if ($('.bar-bottom-01').length) {
+            $(".body").css({
+                "padding-top": $(".top-bar-01").height(),
+                "padding-bottom": $(".bar-bottom-01").height()
+            });
+        }
+    </script>
+
+</body>
+
+</html>

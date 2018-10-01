@@ -1,0 +1,165 @@
+/* Sass Document */
+/* line 4, dolce-app.sass */
+* { position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0 !important; border: none; }
+
+/* line 13, dolce-app.sass */
+*::before, *::after { box-sizing: border-box; }
+
+@font-face { font-family: "varsity"; src: url("../fonts-mgo/varsity_regular-webfont.eot"); src: url("../fonts-mgo/varsity_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts-mgo/varsity_regular-webfont.woff") format("woff"), url("../fonts-mgo/varsity_regular-webfont.ttf") format("truetype"), url("../fonts-mgo/varsity_regular-webfont.svg#varsity_regularvarsityRg") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "fontastiquefontastique"; src: url("../fonts-mgo/fontastique/fontastique-webfont.eot"); src: url("../fonts-mgo/fontastique/fontastique-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts-mgo/fontastique/fontastique-webfont.woff2") format("woff2"), url("../fonts-mgo/fontastique/fontastique-webfont.woff") format("woff"), url("../fonts-mgo/fontastique/fontastique-webfont.ttf") format("truetype"), url("../fonts-mgo/fontastique/fontastique-webfont.svg#fontastiquefontastique") format("svg"); font-weight: normal; font-style: normal; }
+/* ---------------------------- CORE ------------------------------ */
+/* line 73, dolce-app.sass */
+html, body { min-height: 100vh; height: auto; }
+
+/* line 77, dolce-app.sass */
+body { font-family: "Montserrat", sans-serif; font-size: 12px; font-weight: 500; }
+
+/* line 82, dolce-app.sass */
+button { background-color: transparent; cursor: pointer; }
+
+/* line 86, dolce-app.sass */
+hr { border: 1px solid #787878; }
+
+/* ------ STYLES ---------- */
+/* line 92, dolce-app.sass */
+.mnh-100 { min-height: 100vh; height: auto; }
+
+/* line 97, dolce-app.sass */
+.padding-bottom-50 { padding-bottom: 50px; }
+
+/* line 101, dolce-app.sass */
+.margin-top--230 { margin-top: -230px; }
+
+/* line 104, dolce-app.sass */
+.margin-top--30 { margin-top: -30px; }
+
+/* line 108, dolce-app.sass */
+.menu-overlay-01 { width: 280px; height: 100%; position: fixed; top: 0; left: 0; z-index: 2000; }
+/* line 115, dolce-app.sass */
+.menu-overlay-01 .avatar-01 { width: 100px; height: 100px; overflow: hidden; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; border-radius: 100%; border: 3px solid white; display: inline-block; }
+/* line 122, dolce-app.sass */
+.menu-overlay-01 .avatar-01 img { width: 100%; height: 100%; object-fit: cover; }
+
+/* line 128, dolce-app.sass */
+.top-bar-01, .bar-bottom-01 { color: #787878; background-color: black; }
+/* line 131, dolce-app.sass */
+.top-bar-01 .cont, .bar-bottom-01 .cont { padding: 12px 0; }
+/* line 133, dolce-app.sass */
+.top-bar-01 .title-bar-01, .bar-bottom-01 .title-bar-01 { font-size: 13px; font-weight: 700; text-align: center; text-transform: uppercase; }
+/* line 138, dolce-app.sass */
+.top-bar-01 .title-bar-01 span, .bar-bottom-01 .title-bar-01 span { font-size: 9px; line-height: 0.5rem; display: block; }
+/* line 142, dolce-app.sass */
+.top-bar-01.bar-bottom-01, .bar-bottom-01.bar-bottom-01 { background-color: #383838; }
+/* line 144, dolce-app.sass */
+.top-bar-01.bar-bottom-01 [class*=btn-], .bar-bottom-01.bar-bottom-01 [class*=btn-] { -webkit-border-radius: 0px; -moz-border-radius: 0px; -ms-border-radius: 0px; border-radius: 0px; }
+
+/* line 148, dolce-app.sass */
+.bg-home-01 { background: url(../images/bg-home-01.jpg) center center fixed; background-size: auto 100%; }
+
+/* line 153, dolce-app.sass */
+.bg-white-01 { background: white; }
+
+/* line 156, dolce-app.sass */
+.bg-white-80 { background: rgba(255, 255, 255, 0.8); }
+
+/* line 159, dolce-app.sass */
+.bg-gray-03 { background: #e6e6e6; }
+
+/* line 162, dolce-app.sass */
+.bg-black-01 { color: white; background: #000; }
+
+/* line 167, dolce-app.sass */
+[class*=input-] { font-weight: 700; }
+/* line 169, dolce-app.sass */
+[class*=input-]::placeholder { text-transform: uppercase; }
+/* line 171, dolce-app.sass */
+[class*=input-]:-ms-input-placeholder { text-transform: uppercase; }
+/* line 173, dolce-app.sass */
+[class*=input-]::-ms-input-placeholder { text-transform: uppercase; }
+/* line 175, dolce-app.sass */
+[class*=input-].input-01 { width: 100%; color: white; background: rgba(0, 0, 0, 0.5); padding: 11px; -webkit-border-radius: 25px; -moz-border-radius: 25px; -ms-border-radius: 25px; border-radius: 25px; }
+/* line 181, dolce-app.sass */
+[class*=input-].input-01::placeholder { color: white; }
+/* line 183, dolce-app.sass */
+[class*=input-].input-01:-ms-input-placeholder { color: white; }
+/* line 185, dolce-app.sass */
+[class*=input-].input-01::-ms-input-placeholder { color: white; }
+
+/* line 188, dolce-app.sass */
+.text-box-01 { width: 100%; -webkit-box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.15); box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.15); }
+
+/* line 194, dolce-app.sass */
+.select-01 { background-color: white; font-weight: 700; }
+
+/* line 199, dolce-app.sass */
+[class*=btn-] { width: 100%; text-transform: uppercase; font-weight: 700; display: block; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; }
+/* line 205, dolce-app.sass */
+[class*=btn-].btn-primary { background: black; padding: 11px; }
+/* line 208, dolce-app.sass */
+[class*=btn-].btn-second { max-width: 85%; background: #e6e6e6; padding: 11px; }
+/* line 212, dolce-app.sass */
+[class*=btn-].btn-white-01 { font-weight: 500; background: white; padding: 11px; }
+/* line 216, dolce-app.sass */
+[class*=btn-].btn-red { color: white; max-width: 85%; background: #cd0000; padding: 11px; }
+/* line 221, dolce-app.sass */
+[class*=btn-].btn-facebook-01 { background: #3b5998; color: white; padding: 8px; text-transform: lowercase; }
+/* line 226, dolce-app.sass */
+[class*=btn-] .icon { margin-right: 8px; }
+
+/* line 230, dolce-app.sass */
+.f-style-01, .f-style-02 { font-size: 55px; font-weight: 700; text-shadow: 0px 3px 1px #cccccc; }
+/* line 234, dolce-app.sass */
+.f-style-01.f-style-02, .f-style-02.f-style-02 { font-size: 45px; line-height: 2rem; }
+
+/* line 238, dolce-app.sass */
+.f-size-33 { font-size: 33px; }
+
+/* line 241, dolce-app.sass */
+.f-size-22 { font-size: 22px; }
+
+/* line 244, dolce-app.sass */
+.f-size-15 { font-size: 15px; }
+
+/* line 248, dolce-app.sass */
+.clr-gray-02 { color: #383838; }
+
+/* line 252, dolce-app.sass */
+.overflow-auto { overflow: auto; }
+
+/* line 255, dolce-app.sass */
+.scroll-y { overflow-y: auto; overflow-x: hidden; }
+
+/* line 260, dolce-app.sass */
+.radius-8 { -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; border-radius: 8px; }
+
+/* line 264, dolce-app.sass */
+.timeline-status-01:after { content: ""; width: 4px; height: 100%; background: #cccccc; margin: auto; position: absolute; top: 0; left: 0; right: 0; z-index: 1; }
+
+/* line 276, dolce-app.sass */
+.status-01 { z-index: 2; }
+/* line 278, dolce-app.sass */
+.status-01 .status { width: 28px; height: 28px; background: #cccccc; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; border-radius: 100%; }
+/* line 283, dolce-app.sass */
+.status-01 .date { color: #e6e6e6; }
+/* line 286, dolce-app.sass */
+.status-01.check .status { background: #383838 url(../images/icons/svg/check.svg) no-repeat center; background-size: 18px 18px; }
+/* line 289, dolce-app.sass */
+.status-01.check .date { color: #383838; }
+/* line 291, dolce-app.sass */
+.status-01.check:after { content: ""; width: 4px; height: 190%; background: #383838; margin: auto; position: absolute; top: 50%; left: 0; right: 0; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); z-index: -1; }
+/* line 304, dolce-app.sass */
+.status-01.check:first-child:after { top: 0; -webkit-transform: translateY(0%); -moz-transform: translateY(0%); -ms-transform: translateY(0%); transform: translateY(0%); }
+/* line 308, dolce-app.sass */
+.status-01.check:last-child:after { bottom: 0; top: auto; -webkit-transform: translateY(0%); -moz-transform: translateY(0%); -ms-transform: translateY(0%); transform: translateY(0%); }
+
+/* line 314, dolce-app.sass */
+.invoice-01 .value { color: #787878; }
+/* line 317, dolce-app.sass */
+.invoice-01.ok .mensj { color: #2f8600; }
+/* line 320, dolce-app.sass */
+.invoice-01.no-ok .value, .invoice-01.no-ok .mensj { color: #cd0000; }
+/* line 322, dolce-app.sass */
+.invoice-01 hr { border-color: #cccccc; }
+
+/* line 326, dolce-app.sass */
+.gradient-b-gray-01:before { content: ""; width: 100%; height: 100px; background: -moz-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(230, 230, 230, 0)), color-stop(100%, #e6e6e6)); background: -webkit-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%); background: -o-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%); background: -ms-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%); background: linear-gradient(180deg, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%); position: absolute; left: 0; bottom: 0; z-index: 2; pointer-events: none; }
