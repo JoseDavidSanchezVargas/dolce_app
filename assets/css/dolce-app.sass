@@ -147,6 +147,50 @@ hr
     background-color: $gray-02    
     & [class*=btn-]
       @include radius(0px)
+		
+/// ITEMS 
+.item-01
+  text-align: center
+  margin-bottom: 1rem
+  & .count-points
+    width: 100%
+    color: white
+    font-size: 13px
+    font-weight: 700
+    padding: 5px
+    position: absolute
+    left: 0
+    bottom: 0
+    z-index: 3
+  & .img-item
+    width: 100%
+    height: 135px
+    padding: 0
+    overflow: hidden
+    @include radius(6px)
+    &:before
+      content: ""
+      width: 100%
+      height: 30%
+      background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .4) 100%)
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, .4)))
+      background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .4) 100%)
+      background: -o-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .4) 100%)
+      background: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .4) 100%)
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .4) 100%)
+      position: absolute
+      left: 0
+      bottom: -1px
+      z-index: 1
+    & img
+      width: 100%
+      height: 100%
+      object-fit: cover	
+  & .name
+    font-size: 12px
+    margin-top: 5px
+    margin-bottom: 3px
+	
 
 /// BG IMG
 .bg-home-01
@@ -160,8 +204,14 @@ hr
 .bg-white-80
   background: rgba(white, .8)
 
+.bg-gray-01	
+  background: $gray-01
+
+.bg-gray-02
+  background: $gray-02
+
 .bg-gray-03
-  background: #e6e6e6
+  background: $gray-03
 
 .bg-black-01
   color: white
@@ -176,7 +226,7 @@ hr
     text-transform: uppercase	
   &::-ms-input-placeholder
     text-transform: uppercase	
-  &.input-01
+  &.input-01, &.input-02
     width: 100%
     color: white
     background: rgba(black, .5)
@@ -188,7 +238,23 @@ hr
       color: white	
     &::-ms-input-placeholder
       color: white	
-	
+  &.input-02
+    background: rgba(black, .9)
+    padding: 11px	
+    @include radius(25px)
+    &::placeholder
+      text-align: center
+    &:-ms-input-placeholder
+      text-align: center
+    &::-ms-input-placeholder
+      text-align: center
+  &.input-search-01
+    background-image: url(../images/icons/svg/search-icon.svg)
+    background-repeat: no-repeat
+    background-position: 12px center
+    background-size: 20px 20px
+    padding-left: 40px
+   
 .text-box-01
   width: 100%
   -webkit-box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, .15)
@@ -229,6 +295,14 @@ hr
     text-transform: lowercase
   & .icon
     margin-right: 8px
+	
+[class*=btn-circle-]
+  width: 40px
+  height: 40px
+  @include radius(100%)
+  &.black
+    background-color: black
+	
 	
 /// FONT
 .f-style-01, .f-style-02

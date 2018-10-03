@@ -77,7 +77,7 @@
     <!-- CONTENT -->
     <div class="bg-gray-03 mnh-100 body d-flex align-content-stretch flex-wrap w-100 m-0">
 
-        <div class="p-0">
+        <div class="p-0 pllx">
             <img src="assets/images/img-puntos.jpg" width="662" height="464" class="img-fluid d-block">
         </div>
 
@@ -132,6 +132,16 @@
             });
 
         });
+		
+        // PARRALLAX EFFECT 
+        $(window).scroll(function(e) {
+            parallax();
+        });
+
+        function parallax() {
+            var scrolled = $(window).scrollTop();
+            $('.pllx').css('top', (scrolled * 0.3) + 'px');
+        }		
     </script>
 
 </body>

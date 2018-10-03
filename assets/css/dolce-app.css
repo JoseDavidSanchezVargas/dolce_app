@@ -58,122 +58,156 @@ hr { border: 1px solid #787878; }
 .top-bar-01.bar-bottom-01 [class*=btn-], .bar-bottom-01.bar-bottom-01 [class*=btn-] { -webkit-border-radius: 0px; -moz-border-radius: 0px; -ms-border-radius: 0px; border-radius: 0px; }
 
 /* line 152, dolce-app.sass */
+.item-01 { text-align: center; margin-bottom: 1rem; }
+/* line 155, dolce-app.sass */
+.item-01 .count-points { width: 100%; color: white; font-size: 13px; font-weight: 700; padding: 5px; position: absolute; left: 0; bottom: 0; z-index: 3; }
+/* line 165, dolce-app.sass */
+.item-01 .img-item { width: 100%; height: 135px; padding: 0; overflow: hidden; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; border-radius: 6px; }
+/* line 171, dolce-app.sass */
+.item-01 .img-item:before { content: ""; width: 100%; height: 30%; background: -moz-linear-gradient(270deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.4))); background: -webkit-linear-gradient(270deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%); background: -o-linear-gradient(270deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%); background: -ms-linear-gradient(270deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%); background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%); position: absolute; left: 0; bottom: -1px; z-index: 1; }
+/* line 185, dolce-app.sass */
+.item-01 .img-item img { width: 100%; height: 100%; object-fit: cover; }
+/* line 189, dolce-app.sass */
+.item-01 .name { font-size: 12px; margin-top: 5px; margin-bottom: 3px; }
+
+/* line 196, dolce-app.sass */
 .bg-home-01 { background: url(../images/bg-home-01.jpg) center center fixed; background-size: auto 100%; }
 
-/* line 157, dolce-app.sass */
+/* line 201, dolce-app.sass */
 .bg-white-01 { background: white; }
 
-/* line 160, dolce-app.sass */
+/* line 204, dolce-app.sass */
 .bg-white-80 { background: rgba(255, 255, 255, 0.8); }
 
-/* line 163, dolce-app.sass */
+/* line 207, dolce-app.sass */
+.bg-gray-01 { background: #787878; }
+
+/* line 210, dolce-app.sass */
+.bg-gray-02 { background: #383838; }
+
+/* line 213, dolce-app.sass */
 .bg-gray-03 { background: #e6e6e6; }
 
-/* line 166, dolce-app.sass */
+/* line 216, dolce-app.sass */
 .bg-black-01 { color: white; background: #000; }
 
-/* line 171, dolce-app.sass */
+/* line 221, dolce-app.sass */
 [class*=input-] { font-weight: 700; }
-/* line 173, dolce-app.sass */
+/* line 223, dolce-app.sass */
 [class*=input-]::placeholder { text-transform: uppercase; }
-/* line 175, dolce-app.sass */
+/* line 225, dolce-app.sass */
 [class*=input-]:-ms-input-placeholder { text-transform: uppercase; }
-/* line 177, dolce-app.sass */
+/* line 227, dolce-app.sass */
 [class*=input-]::-ms-input-placeholder { text-transform: uppercase; }
-/* line 179, dolce-app.sass */
-[class*=input-].input-01 { width: 100%; color: white; background: rgba(0, 0, 0, 0.5); padding: 11px; -webkit-border-radius: 25px; -moz-border-radius: 25px; -ms-border-radius: 25px; border-radius: 25px; }
-/* line 185, dolce-app.sass */
-[class*=input-].input-01::placeholder { color: white; }
-/* line 187, dolce-app.sass */
-[class*=input-].input-01:-ms-input-placeholder { color: white; }
-/* line 189, dolce-app.sass */
-[class*=input-].input-01::-ms-input-placeholder { color: white; }
+/* line 229, dolce-app.sass */
+[class*=input-].input-01, [class*=input-].input-02 { width: 100%; color: white; background: rgba(0, 0, 0, 0.5); padding: 11px; -webkit-border-radius: 25px; -moz-border-radius: 25px; -ms-border-radius: 25px; border-radius: 25px; }
+/* line 235, dolce-app.sass */
+[class*=input-].input-01::placeholder, [class*=input-].input-02::placeholder { color: white; }
+/* line 237, dolce-app.sass */
+[class*=input-].input-01:-ms-input-placeholder, [class*=input-].input-02:-ms-input-placeholder { color: white; }
+/* line 239, dolce-app.sass */
+[class*=input-].input-01::-ms-input-placeholder, [class*=input-].input-02::-ms-input-placeholder { color: white; }
+/* line 241, dolce-app.sass */
+[class*=input-].input-02 { background: rgba(0, 0, 0, 0.9); padding: 11px; -webkit-border-radius: 25px; -moz-border-radius: 25px; -ms-border-radius: 25px; border-radius: 25px; }
+/* line 245, dolce-app.sass */
+[class*=input-].input-02::placeholder { text-align: center; }
+/* line 247, dolce-app.sass */
+[class*=input-].input-02:-ms-input-placeholder { text-align: center; }
+/* line 249, dolce-app.sass */
+[class*=input-].input-02::-ms-input-placeholder { text-align: center; }
+/* line 251, dolce-app.sass */
+[class*=input-].input-search-01 { background-image: url(../images/icons/svg/search-icon.svg); background-repeat: no-repeat; background-position: 12px center; background-size: 20px 20px; padding-left: 40px; }
 
-/* line 192, dolce-app.sass */
+/* line 258, dolce-app.sass */
 .text-box-01 { width: 100%; -webkit-box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.15); box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.15); }
 
-/* line 198, dolce-app.sass */
+/* line 264, dolce-app.sass */
 .select-01 { background-color: white; font-weight: 700; }
 
-/* line 203, dolce-app.sass */
+/* line 269, dolce-app.sass */
 [class*=btn-] { width: 100%; text-transform: uppercase; font-weight: 700; display: block; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; }
-/* line 209, dolce-app.sass */
+/* line 275, dolce-app.sass */
 [class*=btn-].btn-primary { background: black; padding: 11px; }
-/* line 212, dolce-app.sass */
+/* line 278, dolce-app.sass */
 [class*=btn-].btn-second { max-width: 85%; background: #e6e6e6; padding: 11px; }
-/* line 216, dolce-app.sass */
+/* line 282, dolce-app.sass */
 [class*=btn-].btn-white-01 { font-weight: 500; background: white; padding: 11px; }
-/* line 220, dolce-app.sass */
+/* line 286, dolce-app.sass */
 [class*=btn-].btn-red { color: white; max-width: 85%; background: #cd0000; padding: 11px; }
-/* line 225, dolce-app.sass */
+/* line 291, dolce-app.sass */
 [class*=btn-].btn-facebook-01 { background: #3b5998; color: white; padding: 8px; text-transform: lowercase; }
-/* line 230, dolce-app.sass */
+/* line 296, dolce-app.sass */
 [class*=btn-] .icon { margin-right: 8px; }
 
-/* line 234, dolce-app.sass */
+/* line 299, dolce-app.sass */
+[class*=btn-circle-] { width: 40px; height: 40px; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; border-radius: 100%; }
+/* line 303, dolce-app.sass */
+[class*=btn-circle-].black { background-color: black; }
+
+/* line 308, dolce-app.sass */
 .f-style-01, .f-style-02 { font-size: 55px; font-weight: 700; text-shadow: 0px 3px 1px #cccccc; }
-/* line 238, dolce-app.sass */
+/* line 312, dolce-app.sass */
 .f-style-01.f-style-02, .f-style-02.f-style-02 { font-size: 45px; line-height: 2rem; }
 
-/* line 242, dolce-app.sass */
+/* line 316, dolce-app.sass */
 .f-size-33 { font-size: 33px; }
 
-/* line 245, dolce-app.sass */
+/* line 319, dolce-app.sass */
 .f-size-22 { font-size: 22px; }
 
-/* line 248, dolce-app.sass */
+/* line 322, dolce-app.sass */
 .f-size-15 { font-size: 15px; }
 
-/* line 252, dolce-app.sass */
+/* line 326, dolce-app.sass */
 .clr-gray-02 { color: #383838; }
 
-/* line 256, dolce-app.sass */
+/* line 330, dolce-app.sass */
 .overflow-auto { overflow: auto; }
 
-/* line 259, dolce-app.sass */
+/* line 333, dolce-app.sass */
 .scroll-y { overflow-y: auto; overflow-x: hidden; }
 
-/* line 264, dolce-app.sass */
+/* line 338, dolce-app.sass */
 .radius-8 { -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; border-radius: 8px; }
 
-/* line 268, dolce-app.sass */
+/* line 342, dolce-app.sass */
 .timeline-status-01:after { content: ""; width: 4px; height: 100%; background: #cccccc; margin: auto; position: absolute; top: 0; left: 0; right: 0; z-index: 1; }
 
-/* line 280, dolce-app.sass */
+/* line 354, dolce-app.sass */
 .status-01 { z-index: 2; }
-/* line 282, dolce-app.sass */
+/* line 356, dolce-app.sass */
 .status-01 .status { width: 28px; height: 28px; background: #cccccc; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; border-radius: 100%; }
-/* line 287, dolce-app.sass */
+/* line 361, dolce-app.sass */
 .status-01 .date { color: #e6e6e6; }
-/* line 290, dolce-app.sass */
+/* line 364, dolce-app.sass */
 .status-01.check .status { background: #383838 url(../images/icons/svg/check.svg) no-repeat center; background-size: 18px 18px; }
-/* line 293, dolce-app.sass */
+/* line 367, dolce-app.sass */
 .status-01.check .date { color: #383838; }
-/* line 295, dolce-app.sass */
+/* line 369, dolce-app.sass */
 .status-01.check:after { content: ""; width: 4px; height: 190%; background: #383838; margin: auto; position: absolute; top: 50%; left: 0; right: 0; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); z-index: -1; }
-/* line 308, dolce-app.sass */
+/* line 382, dolce-app.sass */
 .status-01.check:first-child:after { top: 0; -webkit-transform: translateY(0%); -moz-transform: translateY(0%); -ms-transform: translateY(0%); transform: translateY(0%); }
-/* line 312, dolce-app.sass */
+/* line 386, dolce-app.sass */
 .status-01.check:last-child:after { bottom: 0; top: auto; -webkit-transform: translateY(0%); -moz-transform: translateY(0%); -ms-transform: translateY(0%); transform: translateY(0%); }
 
-/* line 318, dolce-app.sass */
+/* line 392, dolce-app.sass */
 .invoice-01 .value { color: #787878; }
-/* line 321, dolce-app.sass */
+/* line 395, dolce-app.sass */
 .invoice-01.ok .mensj { color: #2f8600; }
-/* line 324, dolce-app.sass */
+/* line 398, dolce-app.sass */
 .invoice-01.no-ok .value, .invoice-01.no-ok .mensj { color: #cd0000; }
-/* line 326, dolce-app.sass */
+/* line 400, dolce-app.sass */
 .invoice-01 hr { border-color: #cccccc; }
 
-/* line 330, dolce-app.sass */
+/* line 404, dolce-app.sass */
 .gradient-b-gray-01:before { content: ""; width: 100%; height: 100px; background: -moz-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(230, 230, 230, 0)), color-stop(100%, #e6e6e6)); background: -webkit-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%); background: -o-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%); background: -ms-linear-gradient(270deg, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%); background: linear-gradient(180deg, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%); position: absolute; left: 0; bottom: 0; z-index: 2; pointer-events: none; }
 
-/* line 346, dolce-app.sass */
+/* line 420, dolce-app.sass */
 .overlay-01 { width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); position: fixed; left: 0; top: 0; z-index: 1500; }
-/* line 354, dolce-app.sass */
+/* line 428, dolce-app.sass */
 .overlay-01.close-on { opacity: 0; visibility: hidden; }
-/* line 357, dolce-app.sass */
+/* line 431, dolce-app.sass */
 .overlay-01.active-on { opacity: 1; visibility: visible; }
 
-/* line 361, dolce-app.sass */
+/* line 435, dolce-app.sass */
 .menu-overlay-01, .overlay-01 { -webkit-transition: all 400ms cubic-bezier(0.52, 0.005, 0, 0.995); -moz-transition: all 400ms cubic-bezier(0.52, 0.005, 0, 0.995); -o-transition: all 400ms cubic-bezier(0.52, 0.005, 0, 0.995); transition: all 400ms cubic-bezier(0.52, 0.005, 0, 0.995); /* custom */ -webkit-transition-timing-function: cubic-bezier(0.52, 0.005, 0, 0.995); -moz-transition-timing-function: cubic-bezier(0.52, 0.005, 0, 0.995); -o-transition-timing-function: cubic-bezier(0.52, 0.005, 0, 0.995); transition-timing-function: cubic-bezier(0.52, 0.005, 0, 0.995); }
